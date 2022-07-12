@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8" />
+    <title>My book library</title>
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0-beta1/css/bootstrap.min.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+
+          <h1>My book library</h1>
+          
+      </div>
+      <div >
+        <form action=""  class="row" style=" margin-bottom: 1.3rem;">
+          <div class="five col">
+            <label for="name">Book</label>
+            <input type="text" class="form-control" id="name" />
+          </div>
+          <div class="five col">
+            <label for="author">Author</label>
+            <input type="text" class="form-control" id="author" />
+          </div>
+          <div class="two col">
+            <label for="status">Status</label>
+            <select name="status" id="status" class="form-control">
+              <option value="read">Read</option>
+              <option value="not read">Not read</option>
+            </select>
+          </div>
+          <input type="submit" value="Add bock" class="btn btn-success" style="width:100px ; height: 40px;    margin-top: 1.3rem;"/>
+        </form>
+      </div>
+      <div class="row">
+        <div class="twelve col"></div>
+        <table class="twelve columns table ">
+          <tr>
+            <th>Name</th>
+            <th>Author</th>
+            <th>Status</th>
+            <th></th>
+          </tr>
+          <tbody id="book-table-body"></tbody>
+        </table>
+      </div>
+    </div>
+
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0-beta1/js/bootstrap.min.js"></script>
+    <script src="./library.js"></script>
+  </body>
+</html>
